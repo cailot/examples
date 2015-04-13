@@ -14,7 +14,7 @@ class KeyboardViewController: UIInputViewController {
     var isCaps = false;
     
 
-    
+    @IBOutlet var buttons: Array<UIButton>!
     
     ////////////////////////////////////////////
     //      First Row
@@ -190,7 +190,7 @@ class KeyboardViewController: UIInputViewController {
     
     ////////////////////////////////////////////
     //      Special Keys
-    /////////////////////////////////////////////
+    ////////////////////////////////////////////
     
     // next keyboard
     @IBAction func nextKeyboardPressed(button: UIButton)
@@ -201,10 +201,8 @@ class KeyboardViewController: UIInputViewController {
     // caps
     @IBAction func pressCaps(button: UIButton)
     {
-        for button in buttons
-        {
-            println(button.titleLabel!.text)
-        }
+        changeCaps()
+        isCaps = !isCaps
     }
     
     // backspace
@@ -219,18 +217,24 @@ class KeyboardViewController: UIInputViewController {
         (textDocumentProxy as! UIKeyInput).insertText(" ")
     }
     
+    // special chars
+    @IBAction func pressSpecialChars(button: UIButton)
+    {
+        var title = button.titleLabel!.text
+        if title=="123"
+        {
+            button.setTitle("ABC", forState: .Normal)
+        }else{
+            button.setTitle("123", forState: .Normal)
+        }
+    }
     // return
     @IBAction func pressReturn(sender: UIButton)
     {
         (textDocumentProxy as! UIKeyInput).insertText("\n")
     }
+
     
-    
-//    var keys: UIButton![] {return [keyQ, keyW, keyE, keyR, keyT, keyY, keyU, keyI, keyO, keyP, keyA, keyS, keyD, keyF, keyG, keyH, keyJ, keyK, keyL, keyZ, keyX, keyC, keyV, keyB, keyN, keyM] }
-    
-//    @IBOutlet var buttons: Array<UIButton>! = [keyQ, keyW, keyE, keyR, keyT, keyY, keyU, keyI, keyO, keyP, keyA, keyS, keyD, keyF, keyG, keyH, keyJ, keyK, keyL, keyZ, keyX, keyC, keyV, keyB, keyN, keyM]
-    
-    @IBOutlet var buttons: Array<UIButton>!
     
     
     
@@ -238,6 +242,23 @@ class KeyboardViewController: UIInputViewController {
     {
         var string = button.titleLabel!.text
         (textDocumentProxy as! UIKeyInput).insertText("\(string!)")
+    }
+    
+    func changeCaps()
+    {
+        for button in buttons
+        {
+            var buttonTitle = button.titleLabel!.text;
+            if isCaps // change to lower
+            {
+                var text = buttonTitle!.uppercaseString
+                button.setTitle(text, forState: .Normal)
+            }else{ // change to upper
+                var text = buttonTitle!.lowercaseString
+                button.setTitle(text, forState: .Normal)
+            }
+            
+        }
     }
     
     
@@ -249,6 +270,7 @@ class KeyboardViewController: UIInputViewController {
     
     func loadInterface()
     {
+        println("started...")
         let nib = UINib(nibName: "KeyboardView5", bundle: nil)
         view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
         makeButtons()
