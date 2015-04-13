@@ -3,7 +3,7 @@
 //  AC Keyboard
 //
 //  Created by Jin Seo on 2015. 4. 6..
-//  Copyright (c) 2015년 Jin Seo. All rights reserved.
+//  Copyright (c) 2015 Jin Seo. All rights reserved.
 //
 
 import UIKit
