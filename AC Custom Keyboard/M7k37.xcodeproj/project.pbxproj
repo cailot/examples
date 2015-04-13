@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69145F141AD2521F00060587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69145F131AD2521F00060587 /* AppDelegate.swift */; };
+		69145F161AD2521F00060587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69145F151AD2521F00060587 /* ViewController.swift */; };
+		69145F191AD2521F00060587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69145F171AD2521F00060587 /* Main.storyboard */; };
+		69145F1B1AD2521F00060587 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69145F1A1AD2521F00060587 /* Images.xcassets */; };
+		69145F1E1AD2521F00060587 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69145F1C1AD2521F00060587 /* LaunchScreen.xib */; };
+		69145F2A1AD2521F00060587 /* AC_Custom_KeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69145F291AD2521F00060587 /* AC_Custom_KeyboardTests.swift */; };
+		69145F3C1AD2523D00060587 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69145F3B1AD2523D00060587 /* KeyboardViewController.swift */; };
+		69145F3F1AD2523D00060587 /* AC Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 69145F371AD2523D00060587 /* AC Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		69145F451AD2538800060587 /* KeyboardView5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69145F441AD2538800060587 /* KeyboardView5.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69145F241AD2521F00060587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69145F061AD2521F00060587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69145F0D1AD2521F00060587;
+			remoteInfo = "AC Custom Keyboard";
+		};
+		69145F3D1AD2523D00060587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69145F061AD2521F00060587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69145F361AD2523D00060587;
+			remoteInfo = "AC Keyboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		69145F431AD2523D00060587 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				69145F3F1AD2523D00060587 /* AC Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		69145F0E1AD2521F00060587 /* M7k37.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M7k37.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69145F121AD2521F00060587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69145F131AD2521F00060587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69145F151AD2521F00060587 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69145F181AD2521F00060587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69145F1A1AD2521F00060587 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		69145F1D1AD2521F00060587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		69145F231AD2521F00060587 /* M7k37Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M7k37Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69145F281AD2521F00060587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69145F291AD2521F00060587 /* AC_Custom_KeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AC_Custom_KeyboardTests.swift; sourceTree = "<group>"; };
+		69145F371AD2523D00060587 /* AC Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AC Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69145F3A1AD2523D00060587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69145F3B1AD2523D00060587 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		69145F441AD2538800060587 /* KeyboardView5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView5.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69145F0B1AD2521F00060587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69145F201AD2521F00060587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69145F341AD2523D00060587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69145F051AD2521F00060587 = {
+			isa = PBXGroup;
+			children = (
+				69145F101AD2521F00060587 /* AC Custom Keyboard */,
+				69145F261AD2521F00060587 /* AC Custom KeyboardTests */,
+				69145F381AD2523D00060587 /* AC Keyboard */,
+				69145F0F1AD2521F00060587 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69145F0F1AD2521F00060587 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69145F0E1AD2521F00060587 /* M7k37.app */,
+				69145F231AD2521F00060587 /* M7k37Tests.xctest */,
+				69145F371AD2523D00060587 /* AC Keyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69145F101AD2521F00060587 /* AC Custom Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				69145F131AD2521F00060587 /* AppDelegate.swift */,
+				69145F151AD2521F00060587 /* ViewController.swift */,
+				69145F171AD2521F00060587 /* Main.storyboard */,
+				69145F1A1AD2521F00060587 /* Images.xcassets */,
+				69145F1C1AD2521F00060587 /* LaunchScreen.xib */,
+				69145F111AD2521F00060587 /* Supporting Files */,
+			);
+			path = "AC Custom Keyboard";
+			sourceTree = "<group>";
+		};
+		69145F111AD2521F00060587 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69145F121AD2521F00060587 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69145F261AD2521F00060587 /* AC Custom KeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				69145F291AD2521F00060587 /* AC_Custom_KeyboardTests.swift */,
+				69145F271AD2521F00060587 /* Supporting Files */,
+			);
+			path = "AC Custom KeyboardTests";
+			sourceTree = "<group>";
+		};
+		69145F271AD2521F00060587 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69145F281AD2521F00060587 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69145F381AD2523D00060587 /* AC Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				69145F3B1AD2523D00060587 /* KeyboardViewController.swift */,
+				69145F391AD2523D00060587 /* Supporting Files */,
+				69145F441AD2538800060587 /* KeyboardView5.xib */,
+			);
+			path = "AC Keyboard";
+			sourceTree = "<group>";
+		};
+		69145F391AD2523D00060587 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69145F3A1AD2523D00060587 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69145F0D1AD2521F00060587 /* M7k37 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69145F2D1AD2521F00060587 /* Build configuration list for PBXNativeTarget "M7k37" */;
+			buildPhases = (
+				69145F0A1AD2521F00060587 /* Sources */,
+				69145F0B1AD2521F00060587 /* Frameworks */,
+				69145F0C1AD2521F00060587 /* Resources */,
+				69145F431AD2523D00060587 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69145F3E1AD2523D00060587 /* PBXTargetDependency */,
+			);
+			name = M7k37;
+			productName = "AC Custom Keyboard";
+			productReference = 69145F0E1AD2521F00060587 /* M7k37.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69145F221AD2521F00060587 /* M7k37Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69145F301AD2521F00060587 /* Build configuration list for PBXNativeTarget "M7k37Tests" */;
+			buildPhases = (
+				69145F1F1AD2521F00060587 /* Sources */,
+				69145F201AD2521F00060587 /* Frameworks */,
+				69145F211AD2521F00060587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69145F251AD2521F00060587 /* PBXTargetDependency */,
+			);
+			name = M7k37Tests;
+			productName = "AC Custom KeyboardTests";
+			productReference = 69145F231AD2521F00060587 /* M7k37Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69145F361AD2523D00060587 /* AC Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69145F401AD2523D00060587 /* Build configuration list for PBXNativeTarget "AC Keyboard" */;
+			buildPhases = (
+				69145F331AD2523D00060587 /* Sources */,
+				69145F341AD2523D00060587 /* Frameworks */,
+				69145F351AD2523D00060587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AC Keyboard";
+			productName = "AC Keyboard";
+			productReference = 69145F371AD2523D00060587 /* AC Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69145F061AD2521F00060587 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Jin Seo";
+				TargetAttributes = {
+					69145F0D1AD2521F00060587 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					69145F221AD2521F00060587 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 69145F0D1AD2521F00060587;
+					};
+					69145F361AD2523D00060587 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 69145F091AD2521F00060587 /* Build configuration list for PBXProject "M7k37" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69145F051AD2521F00060587;
+			productRefGroup = 69145F0F1AD2521F00060587 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69145F0D1AD2521F00060587 /* M7k37 */,
+				69145F221AD2521F00060587 /* M7k37Tests */,
+				69145F361AD2523D00060587 /* AC Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69145F0C1AD2521F00060587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69145F191AD2521F00060587 /* Main.storyboard in Resources */,
+				69145F1E1AD2521F00060587 /* LaunchScreen.xib in Resources */,
+				69145F1B1AD2521F00060587 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69145F211AD2521F00060587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69145F351AD2523D00060587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69145F451AD2538800060587 /* KeyboardView5.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69145F0A1AD2521F00060587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69145F161AD2521F00060587 /* ViewController.swift in Sources */,
+				69145F141AD2521F00060587 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69145F1F1AD2521F00060587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69145F2A1AD2521F00060587 /* AC_Custom_KeyboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69145F331AD2523D00060587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69145F3C1AD2523D00060587 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69145F251AD2521F00060587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69145F0D1AD2521F00060587 /* M7k37 */;
+			targetProxy = 69145F241AD2521F00060587 /* PBXContainerItemProxy */;
+		};
+		69145F3E1AD2523D00060587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69145F361AD2523D00060587 /* AC Keyboard */;
+			targetProxy = 69145F3D1AD2523D00060587 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69145F171AD2521F00060587 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69145F181AD2521F00060587 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69145F1C1AD2521F00060587 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69145F1D1AD2521F00060587 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69145F2B1AD2521F00060587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69145F2C1AD2521F00060587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69145F2E1AD2521F00060587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "AC Custom Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = M7k37;
+			};
+			name = Debug;
+		};
+		69145F2F1AD2521F00060587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "AC Custom Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = M7k37;
+			};
+			name = Release;
+		};
+		69145F311AD2521F00060587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AC Custom KeyboardTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = M7k37Tests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AC Custom Keyboard.app/AC Custom Keyboard";
+			};
+			name = Debug;
+		};
+		69145F321AD2521F00060587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AC Custom KeyboardTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = M7k37Tests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AC Custom Keyboard.app/AC Custom Keyboard";
+			};
+			name = Release;
+		};
+		69145F411AD2523D00060587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AC Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		69145F421AD2523D00060587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "AC Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69145F091AD2521F00060587 /* Build configuration list for PBXProject "M7k37" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69145F2B1AD2521F00060587 /* Debug */,
+				69145F2C1AD2521F00060587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69145F2D1AD2521F00060587 /* Build configuration list for PBXNativeTarget "M7k37" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69145F2E1AD2521F00060587 /* Debug */,
+				69145F2F1AD2521F00060587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69145F301AD2521F00060587 /* Build configuration list for PBXNativeTarget "M7k37Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69145F311AD2521F00060587 /* Debug */,
+				69145F321AD2521F00060587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69145F401AD2523D00060587 /* Build configuration list for PBXNativeTarget "AC Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69145F411AD2523D00060587 /* Debug */,
+				69145F421AD2523D00060587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69145F061AD2521F00060587 /* Project object */;
+}
