@@ -51,26 +51,6 @@ class KeyboardViewController: UIInputViewController {
     //      First Row
     /////////////////////////////////////////////
     
-    @IBOutlet var keyQ: UIButton!
-    
-    @IBOutlet var keyW: UIButton!
-    
-    @IBOutlet var keyE: UIButton!
-    
-    @IBOutlet var keyR: UIButton!
-    
-    @IBOutlet var keyT: UIButton!
-    
-    @IBOutlet var keyY: UIButton!
-    
-    @IBOutlet var keyU: UIButton!
-    
-    @IBOutlet var keyI: UIButton!
-   
-    @IBOutlet var keyO: UIButton!
-    
-    @IBOutlet var keyP: UIButton!
-    
     @IBAction func pressQ(sender: UIButton) {
         keyPressed(sender)
     }
@@ -115,24 +95,6 @@ class KeyboardViewController: UIInputViewController {
     //      Second Row
     /////////////////////////////////////////////
     
-    @IBOutlet var keyA: UIButton!
-    
-    @IBOutlet var keyS: UIButton!
-    
-    @IBOutlet var keyD: UIButton!
-    
-    @IBOutlet var keyF: UIButton!
-    
-    @IBOutlet var keyG: UIButton!
-    
-    @IBOutlet var keyH: UIButton!
-    
-    @IBOutlet var keyJ: UIButton!
-    
-    @IBOutlet var keyK: UIButton!
-    
-    @IBOutlet var keyL: UIButton!
-    
     @IBAction func pressA(sender: UIButton) {
         keyPressed(sender)
     }
@@ -172,24 +134,6 @@ class KeyboardViewController: UIInputViewController {
     ////////////////////////////////////////////
     //      Third Row
     /////////////////////////////////////////////
-    
-    @IBOutlet var keyCaps: UIButton!
-    
-    @IBOutlet var keyZ: UIButton!
-    
-    @IBOutlet var keyX: UIButton!
- 
-    @IBOutlet var keyC: UIButton!
-    
-    @IBOutlet var keyV: UIButton!
-    
-    @IBOutlet var keyB: UIButton!
-    
-    @IBOutlet var keyN: UIButton!
-    
-    @IBOutlet var keyM: UIButton!
-    
-    @IBOutlet var keyDel: UIButton!
     
     @IBAction func pressZ(sender: UIButton) {
         keyPressed(sender)
@@ -364,9 +308,6 @@ class KeyboardViewController: UIInputViewController {
         })
     }
     
- 
-    
-    
     override func updateViewConstraints() {
         super.updateViewConstraints()
         
@@ -378,21 +319,14 @@ class KeyboardViewController: UIInputViewController {
         println("started...")
         let nib = UINib(nibName: "KeyboardView5", bundle: nil)
         view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
-        makeButtons()
+  
     }
-    
-    func makeButtons()
-    {
-        
-    }
-    
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         loadInterface()
-        makeButtons()
-    }
+     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -413,7 +347,6 @@ class KeyboardViewController: UIInputViewController {
         } else {
             textColor = UIColor.blackColor()
         }
-        //        self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
     }
     
 }

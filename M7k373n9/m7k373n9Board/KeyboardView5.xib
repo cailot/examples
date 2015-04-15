@@ -6,34 +6,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="m7k373n9Board" customModuleProvider="target">
             <connections>
-                <outlet property="keyA" destination="YhS-PB-BJm" id="wiK-zy-MJH"/>
-                <outlet property="keyB" destination="35S-on-X2Y" id="zVX-7c-Uor"/>
-                <outlet property="keyC" destination="Vwh-Ng-zl5" id="g03-Ac-lc4"/>
-                <outlet property="keyCaps" destination="7N3-hG-HI3" id="ZoD-No-XFb"/>
-                <outlet property="keyD" destination="CHI-Rd-6tt" id="gKG-iy-huo"/>
-                <outlet property="keyDel" destination="kzd-Qk-vHq" id="xNT-aj-knY"/>
-                <outlet property="keyE" destination="b7c-pe-X14" id="9bv-f0-q83"/>
-                <outlet property="keyF" destination="Sen-ei-IO7" id="k1Q-I1-h88"/>
-                <outlet property="keyG" destination="iKX-id-n45" id="Ash-F6-T1H"/>
-                <outlet property="keyH" destination="AhS-mj-Pf8" id="dl9-tz-0Hs"/>
-                <outlet property="keyI" destination="Tu7-Yf-99Q" id="J5m-g2-qua"/>
-                <outlet property="keyJ" destination="4h4-H6-b1m" id="I8w-sz-oCa"/>
-                <outlet property="keyK" destination="PYd-Yw-uqe" id="jM0-d7-TUV"/>
-                <outlet property="keyL" destination="WVy-F7-VjP" id="LgH-gn-F5j"/>
-                <outlet property="keyM" destination="uZO-9M-IRv" id="UTt-R2-see"/>
-                <outlet property="keyN" destination="xth-Yu-ksi" id="OLa-cO-fmd"/>
-                <outlet property="keyO" destination="hob-iK-oWZ" id="MVn-7J-rLl"/>
-                <outlet property="keyP" destination="8g4-ZD-wMI" id="Gbz-sz-lom"/>
-                <outlet property="keyQ" destination="ymn-SD-UPT" id="jbW-a7-f60"/>
-                <outlet property="keyR" destination="WYG-1O-HO7" id="ieR-qJ-PNE"/>
-                <outlet property="keyS" destination="Bvg-ep-a7L" id="c77-jL-wsp"/>
-                <outlet property="keyT" destination="ZT9-fv-aMK" id="EYG-u1-F9i"/>
-                <outlet property="keyU" destination="hOW-2S-dGD" id="COK-qv-kOr"/>
-                <outlet property="keyV" destination="uwu-XP-tvN" id="d96-eC-rsd"/>
-                <outlet property="keyW" destination="XK3-5D-8sP" id="pcN-a2-cZP"/>
-                <outlet property="keyX" destination="GvN-fi-42J" id="Hvy-Xx-MoN"/>
-                <outlet property="keyY" destination="cJM-Va-FIl" id="XSN-5D-tA2"/>
-                <outlet property="keyZ" destination="0eV-AQ-qqr" id="i9j-5W-ZiB"/>
                 <outletCollection property="firsts" destination="ymn-SD-UPT" collectionClass="NSMutableArray" id="xnz-3u-31s"/>
                 <outletCollection property="firsts" destination="XK3-5D-8sP" collectionClass="NSMutableArray" id="8ps-8Q-70v"/>
                 <outletCollection property="firsts" destination="b7c-pe-X14" collectionClass="NSMutableArray" id="afn-yq-vIP"/>
