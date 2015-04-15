@@ -452,26 +452,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caj-xE-5ZT" userLabel="Four">
                     <rect key="frame" x="0.0" y="170" width="320" height="50"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MI2-Wh-nfw">
-                            <rect key="frame" x="6" y="10" width="50" height="30"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="50" id="4YI-H5-tgm"/>
-                                <constraint firstAttribute="width" constant="50" id="afZ-AS-5Ot"/>
-                            </constraints>
-                            <state key="normal" title="Next">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <variation key="default">
-                                <mask key="constraints">
-                                    <exclude reference="4YI-H5-tgm"/>
-                                </mask>
-                            </variation>
-                            <connections>
-                                <action selector="nextKeyboardPressed:" destination="-1" eventType="touchUpInside" id="Pom-QD-37T"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzd-WF-5Xb">
-                            <rect key="frame" x="58" y="10" width="50" height="30"/>
+                            <rect key="frame" x="6" y="10" width="50" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="7p5-Yg-JxO"/>
                                 <constraint firstAttribute="width" constant="50" id="nXH-Xq-fBp"/>
@@ -488,13 +470,22 @@
                                 <action selector="pressSpecialChars:" destination="-1" eventType="touchUpInside" id="E2Q-c0-Q7G"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zuf-dc-CAZ">
-                            <rect key="frame" x="110" y="10" width="100" height="30"/>
-                            <state key="normal" title="Space">
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MI2-Wh-nfw">
+                            <rect key="frame" x="58" y="10" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="4YI-H5-tgm"/>
+                                <constraint firstAttribute="width" constant="50" id="afZ-AS-5Ot"/>
+                            </constraints>
+                            <state key="normal" title="Next">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="4YI-H5-tgm"/>
+                                </mask>
+                            </variation>
                             <connections>
-                                <action selector="pressSpace:" destination="-1" eventType="touchUpInside" id="Oy0-m0-K7Z"/>
+                                <action selector="nextKeyboardPressed:" destination="-1" eventType="touchUpInside" id="Pom-QD-37T"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI9-mw-uZL">
@@ -515,20 +506,29 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zuf-dc-CAZ">
+                            <rect key="frame" x="110" y="10" width="100" height="30"/>
+                            <state key="normal" title="Space">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pressSpace:" destination="-1" eventType="touchUpInside" id="Oy0-m0-K7Z"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="centerY" secondItem="MI2-Wh-nfw" secondAttribute="centerY" id="7Vq-8V-yVW"/>
                         <constraint firstAttribute="trailing" secondItem="VLG-p4-HJK" secondAttribute="trailing" constant="6" id="D8P-Wb-YlN"/>
                         <constraint firstAttribute="centerY" secondItem="tI9-mw-uZL" secondAttribute="centerY" id="Fcl-TP-NBg"/>
                         <constraint firstItem="VLG-p4-HJK" firstAttribute="baseline" secondItem="tI9-mw-uZL" secondAttribute="baseline" id="I1g-E8-LtS"/>
-                        <constraint firstItem="Xzd-WF-5Xb" firstAttribute="leading" secondItem="MI2-Wh-nfw" secondAttribute="trailing" constant="2" id="NSk-er-mip"/>
+                        <constraint firstAttribute="centerY" secondItem="Xzd-WF-5Xb" secondAttribute="centerY" id="O2b-uq-9nU"/>
                         <constraint firstAttribute="centerY" secondItem="Zuf-dc-CAZ" secondAttribute="centerY" id="QVi-lM-BCY"/>
+                        <constraint firstItem="Zuf-dc-CAZ" firstAttribute="leading" secondItem="MI2-Wh-nfw" secondAttribute="trailing" constant="2" id="Qdo-Br-Gv3"/>
+                        <constraint firstItem="Xzd-WF-5Xb" firstAttribute="leading" secondItem="caj-xE-5ZT" secondAttribute="leading" constant="6" id="Qz9-ZU-Okx"/>
                         <constraint firstAttribute="centerX" secondItem="Zuf-dc-CAZ" secondAttribute="centerX" id="TtZ-ej-ghZ"/>
+                        <constraint firstItem="MI2-Wh-nfw" firstAttribute="leading" secondItem="Xzd-WF-5Xb" secondAttribute="trailing" constant="2" id="XgY-WS-Ocq"/>
                         <constraint firstItem="VLG-p4-HJK" firstAttribute="leading" secondItem="tI9-mw-uZL" secondAttribute="trailing" constant="2" id="epV-JN-FTk"/>
-                        <constraint firstItem="Zuf-dc-CAZ" firstAttribute="leading" secondItem="Xzd-WF-5Xb" secondAttribute="trailing" constant="2" id="jwM-cZ-8gN"/>
                         <constraint firstItem="Xzd-WF-5Xb" firstAttribute="baseline" secondItem="MI2-Wh-nfw" secondAttribute="baseline" id="kv0-D9-IUe"/>
-                        <constraint firstItem="MI2-Wh-nfw" firstAttribute="leading" secondItem="caj-xE-5ZT" secondAttribute="leading" constant="6" id="r0P-mE-RBR"/>
                         <constraint firstItem="tI9-mw-uZL" firstAttribute="leading" secondItem="Zuf-dc-CAZ" secondAttribute="trailing" constant="2" id="x9z-TU-VaU"/>
                     </constraints>
                 </view>
