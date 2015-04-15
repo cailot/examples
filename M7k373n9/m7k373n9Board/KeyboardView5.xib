@@ -34,32 +34,32 @@
                 <outlet property="keyX" destination="GvN-fi-42J" id="Hvy-Xx-MoN"/>
                 <outlet property="keyY" destination="cJM-Va-FIl" id="XSN-5D-tA2"/>
                 <outlet property="keyZ" destination="0eV-AQ-qqr" id="i9j-5W-ZiB"/>
-                <outletCollection property="buttons" destination="ymn-SD-UPT" collectionClass="NSMutableArray" id="jfB-Ri-0Gp"/>
-                <outletCollection property="buttons" destination="XK3-5D-8sP" collectionClass="NSMutableArray" id="VQK-da-cFg"/>
-                <outletCollection property="buttons" destination="b7c-pe-X14" collectionClass="NSMutableArray" id="4dj-YM-TD3"/>
-                <outletCollection property="buttons" destination="WYG-1O-HO7" collectionClass="NSMutableArray" id="fnb-vN-gGr"/>
-                <outletCollection property="buttons" destination="ZT9-fv-aMK" collectionClass="NSMutableArray" id="761-ZG-jST"/>
-                <outletCollection property="buttons" destination="cJM-Va-FIl" collectionClass="NSMutableArray" id="wV8-g0-ru3"/>
-                <outletCollection property="buttons" destination="hOW-2S-dGD" collectionClass="NSMutableArray" id="IQn-DB-h6i"/>
-                <outletCollection property="buttons" destination="Tu7-Yf-99Q" collectionClass="NSMutableArray" id="xUs-xw-cyd"/>
-                <outletCollection property="buttons" destination="hob-iK-oWZ" collectionClass="NSMutableArray" id="5H8-tV-6mk"/>
-                <outletCollection property="buttons" destination="8g4-ZD-wMI" collectionClass="NSMutableArray" id="C8t-cK-wfQ"/>
-                <outletCollection property="buttons" destination="YhS-PB-BJm" collectionClass="NSMutableArray" id="nAh-Po-uA7"/>
-                <outletCollection property="buttons" destination="Bvg-ep-a7L" collectionClass="NSMutableArray" id="t7n-iY-uWk"/>
-                <outletCollection property="buttons" destination="CHI-Rd-6tt" collectionClass="NSMutableArray" id="rpj-DS-Skq"/>
-                <outletCollection property="buttons" destination="Sen-ei-IO7" collectionClass="NSMutableArray" id="vor-qd-sSx"/>
-                <outletCollection property="buttons" destination="iKX-id-n45" collectionClass="NSMutableArray" id="ftq-vZ-4Ks"/>
-                <outletCollection property="buttons" destination="AhS-mj-Pf8" collectionClass="NSMutableArray" id="tGV-CB-0FY"/>
-                <outletCollection property="buttons" destination="4h4-H6-b1m" collectionClass="NSMutableArray" id="vaq-GB-0zt"/>
-                <outletCollection property="buttons" destination="PYd-Yw-uqe" collectionClass="NSMutableArray" id="XTN-RU-F4b"/>
-                <outletCollection property="buttons" destination="WVy-F7-VjP" collectionClass="NSMutableArray" id="Brx-g4-lCt"/>
-                <outletCollection property="buttons" destination="0eV-AQ-qqr" collectionClass="NSMutableArray" id="zJj-h9-EHQ"/>
-                <outletCollection property="buttons" destination="GvN-fi-42J" collectionClass="NSMutableArray" id="MWj-LC-bO3"/>
-                <outletCollection property="buttons" destination="Vwh-Ng-zl5" collectionClass="NSMutableArray" id="Zbm-uw-xZz"/>
-                <outletCollection property="buttons" destination="uwu-XP-tvN" collectionClass="NSMutableArray" id="MTV-Fq-VL6"/>
-                <outletCollection property="buttons" destination="35S-on-X2Y" collectionClass="NSMutableArray" id="IpR-dx-8T8"/>
-                <outletCollection property="buttons" destination="xth-Yu-ksi" collectionClass="NSMutableArray" id="RQm-28-shp"/>
-                <outletCollection property="buttons" destination="uZO-9M-IRv" collectionClass="NSMutableArray" id="cV4-cJ-NC5"/>
+                <outletCollection property="firsts" destination="ymn-SD-UPT" collectionClass="NSMutableArray" id="xnz-3u-31s"/>
+                <outletCollection property="firsts" destination="XK3-5D-8sP" collectionClass="NSMutableArray" id="8ps-8Q-70v"/>
+                <outletCollection property="firsts" destination="b7c-pe-X14" collectionClass="NSMutableArray" id="afn-yq-vIP"/>
+                <outletCollection property="firsts" destination="WYG-1O-HO7" collectionClass="NSMutableArray" id="Ej0-gT-Vy8"/>
+                <outletCollection property="firsts" destination="ZT9-fv-aMK" collectionClass="NSMutableArray" id="Pf4-9A-Xub"/>
+                <outletCollection property="seconds" destination="YhS-PB-BJm" collectionClass="NSMutableArray" id="epg-k3-szG"/>
+                <outletCollection property="seconds" destination="Bvg-ep-a7L" collectionClass="NSMutableArray" id="EHW-ys-OO5"/>
+                <outletCollection property="seconds" destination="CHI-Rd-6tt" collectionClass="NSMutableArray" id="Y0K-nZ-QPy"/>
+                <outletCollection property="seconds" destination="Sen-ei-IO7" collectionClass="NSMutableArray" id="LSI-PY-wEa"/>
+                <outletCollection property="seconds" destination="iKX-id-n45" collectionClass="NSMutableArray" id="ZO8-7G-Kk0"/>
+                <outletCollection property="seconds" destination="AhS-mj-Pf8" collectionClass="NSMutableArray" id="OOj-Es-3ch"/>
+                <outletCollection property="seconds" destination="4h4-H6-b1m" collectionClass="NSMutableArray" id="DL9-d0-rsW"/>
+                <outletCollection property="seconds" destination="PYd-Yw-uqe" collectionClass="NSMutableArray" id="xk1-Kg-84c"/>
+                <outletCollection property="seconds" destination="WVy-F7-VjP" collectionClass="NSMutableArray" id="hjI-HL-dCL"/>
+                <outletCollection property="thirds" destination="0eV-AQ-qqr" collectionClass="NSMutableArray" id="3TR-LW-9ks"/>
+                <outletCollection property="thirds" destination="GvN-fi-42J" collectionClass="NSMutableArray" id="BQ0-6S-rKI"/>
+                <outletCollection property="thirds" destination="Vwh-Ng-zl5" collectionClass="NSMutableArray" id="sxI-lO-Ye1"/>
+                <outletCollection property="thirds" destination="uwu-XP-tvN" collectionClass="NSMutableArray" id="0sG-aE-6So"/>
+                <outletCollection property="thirds" destination="35S-on-X2Y" collectionClass="NSMutableArray" id="dJW-3c-7It"/>
+                <outletCollection property="thirds" destination="xth-Yu-ksi" collectionClass="NSMutableArray" id="Vd3-vT-KEr"/>
+                <outletCollection property="thirds" destination="uZO-9M-IRv" collectionClass="NSMutableArray" id="I0n-az-zFV"/>
+                <outletCollection property="firsts" destination="cJM-Va-FIl" collectionClass="NSMutableArray" id="NWf-oc-Pur"/>
+                <outletCollection property="firsts" destination="hOW-2S-dGD" collectionClass="NSMutableArray" id="cPW-Fv-LdO"/>
+                <outletCollection property="firsts" destination="Tu7-Yf-99Q" collectionClass="NSMutableArray" id="qbY-Oa-dYp"/>
+                <outletCollection property="firsts" destination="hob-iK-oWZ" collectionClass="NSMutableArray" id="inD-wB-eh7"/>
+                <outletCollection property="firsts" destination="8g4-ZD-wMI" collectionClass="NSMutableArray" id="deE-TA-34E"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -72,7 +72,7 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymn-SD-UPT">
                             <rect key="frame" x="1" y="10" width="30" height="30"/>
-                            <state key="normal" title="Q">
+                            <state key="normal" title="q">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -81,7 +81,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XK3-5D-8sP">
                             <rect key="frame" x="33" y="10" width="30" height="30"/>
-                            <state key="normal" title="W">
+                            <state key="normal" title="w">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -90,7 +90,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7c-pe-X14">
                             <rect key="frame" x="65" y="10" width="30" height="30"/>
-                            <state key="normal" title="E">
+                            <state key="normal" title="e">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -99,7 +99,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYG-1O-HO7">
                             <rect key="frame" x="97" y="10" width="30" height="30"/>
-                            <state key="normal" title="R">
+                            <state key="normal" title="r">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -108,7 +108,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZT9-fv-aMK">
                             <rect key="frame" x="129" y="10" width="30" height="30"/>
-                            <state key="normal" title="T">
+                            <state key="normal" title="t">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -117,7 +117,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJM-Va-FIl">
                             <rect key="frame" x="161" y="10" width="30" height="30"/>
-                            <state key="normal" title="Y">
+                            <state key="normal" title="y">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -126,7 +126,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOW-2S-dGD">
                             <rect key="frame" x="193" y="10" width="30" height="30"/>
-                            <state key="normal" title="U">
+                            <state key="normal" title="u">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -135,7 +135,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tu7-Yf-99Q">
                             <rect key="frame" x="225" y="10" width="30" height="30"/>
-                            <state key="normal" title="I">
+                            <state key="normal" title="i">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -144,7 +144,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hob-iK-oWZ">
                             <rect key="frame" x="257" y="10" width="30" height="30"/>
-                            <state key="normal" title="O">
+                            <state key="normal" title="o">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -153,7 +153,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8g4-ZD-wMI">
                             <rect key="frame" x="289" y="10" width="30" height="30"/>
-                            <state key="normal" title="P">
+                            <state key="normal" title="p">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -233,7 +233,7 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhS-PB-BJm">
                             <rect key="frame" x="17" y="10" width="30" height="30"/>
-                            <state key="normal" title="A">
+                            <state key="normal" title="a">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -242,7 +242,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvg-ep-a7L">
                             <rect key="frame" x="49" y="10" width="30" height="30"/>
-                            <state key="normal" title="S">
+                            <state key="normal" title="s">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -251,7 +251,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHI-Rd-6tt">
                             <rect key="frame" x="81" y="10" width="30" height="30"/>
-                            <state key="normal" title="D">
+                            <state key="normal" title="d">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -260,7 +260,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sen-ei-IO7">
                             <rect key="frame" x="113" y="10" width="30" height="30"/>
-                            <state key="normal" title="F">
+                            <state key="normal" title="f">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -269,7 +269,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKX-id-n45">
                             <rect key="frame" x="145" y="10" width="30" height="30"/>
-                            <state key="normal" title="G">
+                            <state key="normal" title="g">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -278,7 +278,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhS-mj-Pf8">
                             <rect key="frame" x="177" y="10" width="30" height="30"/>
-                            <state key="normal" title="H">
+                            <state key="normal" title="h">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -287,7 +287,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4h4-H6-b1m">
                             <rect key="frame" x="209" y="10" width="30" height="30"/>
-                            <state key="normal" title="J">
+                            <state key="normal" title="j">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -296,7 +296,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYd-Yw-uqe">
                             <rect key="frame" x="241" y="10" width="30" height="30"/>
-                            <state key="normal" title="K">
+                            <state key="normal" title="k">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -305,7 +305,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVy-F7-VjP">
                             <rect key="frame" x="273" y="10" width="30" height="30"/>
-                            <state key="normal" title="L">
+                            <state key="normal" title="l">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -360,7 +360,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="hNQ-Xb-EJk"/>
                             </constraints>
-                            <state key="normal" title="^">
+                            <state key="normal" title="C-Off">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -369,7 +369,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eV-AQ-qqr">
                             <rect key="frame" x="49" y="10" width="30" height="30"/>
-                            <state key="normal" title="Z">
+                            <state key="normal" title="z">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -378,7 +378,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvN-fi-42J">
                             <rect key="frame" x="81" y="10" width="30" height="30"/>
-                            <state key="normal" title="X">
+                            <state key="normal" title="x">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -387,7 +387,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwh-Ng-zl5">
                             <rect key="frame" x="113" y="10" width="30" height="30"/>
-                            <state key="normal" title="C">
+                            <state key="normal" title="c">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -396,7 +396,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwu-XP-tvN">
                             <rect key="frame" x="145" y="10" width="30" height="30"/>
-                            <state key="normal" title="V">
+                            <state key="normal" title="v">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -405,7 +405,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35S-on-X2Y">
                             <rect key="frame" x="177" y="10" width="30" height="30"/>
-                            <state key="normal" title="B">
+                            <state key="normal" title="b">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -414,7 +414,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xth-Yu-ksi">
                             <rect key="frame" x="209" y="10" width="30" height="30"/>
-                            <state key="normal" title="N">
+                            <state key="normal" title="n">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -423,7 +423,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZO-9M-IRv">
                             <rect key="frame" x="241" y="10" width="30" height="30"/>
-                            <state key="normal" title="M">
+                            <state key="normal" title="m">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>

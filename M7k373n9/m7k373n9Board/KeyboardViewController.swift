@@ -12,9 +12,40 @@ class KeyboardViewController: UIInputViewController {
     
     var isAlphabet = true;
     var isCaps = false;
+   
+    @IBOutlet var firsts: [UIButton]!
     
-
-    @IBOutlet var buttons: Array<UIButton>!
+    @IBOutlet var seconds: [UIButton]!
+    
+    @IBOutlet var thirds: [UIButton]!
+    
+    
+    var first_upper = ["Q","W","E","R","T","Y","U","I","O","P"]
+    
+    var second_upper = ["A","S","D","F","G","H","J","K","L"]
+    
+    var third_upper = ["Z","X","C","V","B","N","M"]
+    
+    var first_lower = ["q","w","e","r","t","y","u","i","o","p"]
+    
+    var second_lower = ["a","s","d","f","g","h","j","k","l"]
+    
+    var third_lower = ["z","x","c","v","b","n","m"]
+    
+    var first_symbols = ["1","2","3","4","5","6","7","8","9","0"]
+    
+    var second_symbols = ["@","#","$","%","&","-","+","(",")"]
+    
+    var third_symbols = ["*","\"","^",":",";","!","?"]
+    
+    var first_symbols_shift = ["~","`","|","´","•","±","×","÷","{","}"]
+    
+    var second_symbols_shift = ["©","®","£","€","¥","=","°","[","]"]
+    
+    var third_symbols_shift = ["¡","<",">","¢","/","\\","¿"]
+    
+    
+    
     
     ////////////////////////////////////////////
     //      First Row
@@ -201,9 +232,101 @@ class KeyboardViewController: UIInputViewController {
     // caps
     @IBAction func pressCaps(button: UIButton)
     {
-        changeCaps()
         isCaps = !isCaps
+        displayKeys()
+        
+        var title = button.titleLabel!.text
+        if title=="C-On"
+        {
+            button.setTitle("C-Off", forState: .Normal)
+        }else{
+            button.setTitle("C-On", forState: .Normal)
+        }
+
     }
+    
+    // special chars
+    @IBAction func pressSpecialChars(button: UIButton)
+    {
+        isAlphabet = !isAlphabet
+        displayKeys()
+        var title = button.titleLabel!.text
+        if title=="123"
+        {
+            button.setTitle("ABC", forState: .Normal)
+        }else{
+            button.setTitle("123", forState: .Normal)
+        }
+    }
+    
+    func displayKeys()
+    {
+        if(isAlphabet) // alphabet
+        {
+            if(isCaps) // change to uppper case
+            {
+                for var index=0; index < firsts.count; index++
+                {
+                    firsts[index].setTitle(first_upper[index], forState: .Normal)
+                }
+                for var index=0; index < seconds.count; index++
+                {
+                    seconds[index].setTitle(second_upper[index], forState: .Normal)
+                }
+                for var index=0; index < thirds.count; index++
+                {
+                    thirds[index].setTitle(third_upper[index], forState: .Normal)
+                }
+                
+            }else{ // change to lower case
+                
+                for var index=0; index < firsts.count; index++
+                {
+                    firsts[index].setTitle(first_lower[index], forState: .Normal)
+                }
+                for var index=0; index < seconds.count; index++
+                {
+                    seconds[index].setTitle(second_lower[index], forState: .Normal)
+                }
+                for var index=0; index < thirds.count; index++
+                {
+                    thirds[index].setTitle(third_lower[index], forState: .Normal)
+                }
+            }
+        }else{ // special characters
+            if(isCaps)
+            {
+                for var index=0; index < firsts.count; index++
+                {
+                    firsts[index].setTitle(first_symbols_shift[index], forState: .Normal)
+                }
+                for var index=0; index < seconds.count; index++
+                {
+                    seconds[index].setTitle(second_symbols_shift[index], forState: .Normal)
+                }
+                for var index=0; index < thirds.count; index++
+                {
+                    thirds[index].setTitle(third_symbols_shift[index], forState: .Normal)
+                }
+                
+            }else{
+                for var index=0; index < firsts.count; index++
+                {
+                    firsts[index].setTitle(first_symbols[index], forState: .Normal)
+                }
+                for var index=0; index < seconds.count; index++
+                {
+                    seconds[index].setTitle(second_symbols[index], forState: .Normal)
+                }
+                for var index=0; index < thirds.count; index++
+                {
+                    thirds[index].setTitle(third_symbols[index], forState: .Normal)
+                }
+            }
+        }
+    }
+    
+    
     
     // backspace
     @IBAction func pressBackSpace(button: UIButton)
@@ -217,17 +340,7 @@ class KeyboardViewController: UIInputViewController {
         (textDocumentProxy as! UIKeyInput).insertText(" ")
     }
     
-    // special chars
-    @IBAction func pressSpecialChars(button: UIButton)
-    {
-        var title = button.titleLabel!.text
-        if title=="123"
-        {
-            button.setTitle("ABC", forState: .Normal)
-        }else{
-            button.setTitle("123", forState: .Normal)
-        }
-    }
+   
     // return
     @IBAction func pressReturn(sender: UIButton)
     {
@@ -242,24 +355,16 @@ class KeyboardViewController: UIInputViewController {
     {
         var string = button.titleLabel!.text
         (textDocumentProxy as! UIKeyInput).insertText("\(string!)")
+        // animation for pop-out effect when press keys
+        UIView.animateWithDuration(0.2, animations: {
+            button.transform = CGAffineTransformScale(CGAffineTransformIdentity, 2.0, 2.0)
+            }, completion: {(_) -> Void in
+                button.transform =
+                CGAffineTransformScale(CGAffineTransformIdentity, 1, 1)
+        })
     }
     
-    func changeCaps()
-    {
-        for button in buttons
-        {
-            var buttonTitle = button.titleLabel!.text;
-            if isCaps // change to lower
-            {
-                var text = buttonTitle!.uppercaseString
-                button.setTitle(text, forState: .Normal)
-            }else{ // change to upper
-                var text = buttonTitle!.lowercaseString
-                button.setTitle(text, forState: .Normal)
-            }
-            
-        }
-    }
+ 
     
     
     override func updateViewConstraints() {
