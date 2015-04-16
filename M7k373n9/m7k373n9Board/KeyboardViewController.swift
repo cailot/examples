@@ -20,6 +20,7 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet var thirds: [UIButton]!
     
     
+    // may need to use seperate file to store keys arrangement
     var first_upper = ["Q","W","E","R","T","Y","U","I","O","P"]
     
     var second_upper = ["A","S","D","F","G","H","J","K","L"]
@@ -290,21 +291,21 @@ class KeyboardViewController: UIInputViewController {
     {
         (textDocumentProxy as! UIKeyInput).insertText("\n")
     }
-
-    
-    
-    
     
     @IBAction func keyPressed(button: UIButton)
     {
         var string = button.titleLabel!.text
+        
+        println(string)
+        
         (textDocumentProxy as! UIKeyInput).insertText("\(string!)")
+        
         // animation for pop-out effect when press keys
         UIView.animateWithDuration(0.2, animations: {
             button.transform = CGAffineTransformScale(CGAffineTransformIdentity, 2.0, 2.0)
             }, completion: {(_) -> Void in
                 button.transform =
-                CGAffineTransformScale(CGAffineTransformIdentity, 1, 1)
+                    CGAffineTransformScale(CGAffineTransformIdentity, 1, 1)
         })
     }
     
@@ -316,7 +317,7 @@ class KeyboardViewController: UIInputViewController {
     
     func loadInterface()
     {
-        println("started...")
+//        NSLog("CurrentMode ")
         let nib = UINib(nibName: "KeyboardView5", bundle: nil)
         view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
   

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		691591011ADFF856003D1EC4 /* M7k373n9.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 691590FF1ADFF856003D1EC4 /* M7k373n9.xcdatamodeld */; };
 		69BEE3631AD8F32D00EBA81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BEE3621AD8F32D00EBA81A /* AppDelegate.swift */; };
 		69BEE3651AD8F32D00EBA81A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BEE3641AD8F32D00EBA81A /* ViewController.swift */; };
 		69BEE3681AD8F32D00EBA81A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BEE3661AD8F32D00EBA81A /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		691591001ADFF856003D1EC4 /* M7k373n9.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = M7k373n9.xcdatamodel; sourceTree = "<group>"; };
 		69BEE35D1AD8F32D00EBA81A /* M7k373n9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M7k373n9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BEE3611AD8F32D00EBA81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69BEE3621AD8F32D00EBA81A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				69BEE3621AD8F32D00EBA81A /* AppDelegate.swift */,
 				69BEE3641AD8F32D00EBA81A /* ViewController.swift */,
+				691590FF1ADFF856003D1EC4 /* M7k373n9.xcdatamodeld */,
 				69BEE3661AD8F32D00EBA81A /* Main.storyboard */,
 				69BEE3691AD8F32D00EBA81A /* Images.xcassets */,
 				69BEE36B1AD8F32D00EBA81A /* LaunchScreen.xib */,
@@ -300,6 +303,7 @@
 			files = (
 				69BEE3651AD8F32D00EBA81A /* ViewController.swift in Sources */,
 				69BEE3631AD8F32D00EBA81A /* AppDelegate.swift in Sources */,
+				691591011ADFF856003D1EC4 /* M7k373n9.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +536,7 @@
 				69BEE37E1AD8F32D00EBA81A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69BEE37F1AD8F32D00EBA81A /* Build configuration list for PBXNativeTarget "M7k373n9Tests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +545,7 @@
 				69BEE3811AD8F32D00EBA81A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69BEE38F1AD8F35600EBA81A /* Build configuration list for PBXNativeTarget "m7k373n9Board" */ = {
 			isa = XCConfigurationList;
@@ -548,8 +554,22 @@
 				69BEE3911AD8F35600EBA81A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		691590FF1ADFF856003D1EC4 /* M7k373n9.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				691591001ADFF856003D1EC4 /* M7k373n9.xcdatamodel */,
+			);
+			currentVersion = 691591001ADFF856003D1EC4 /* M7k373n9.xcdatamodel */;
+			path = M7k373n9.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 69BEE3551AD8F32D00EBA81A /* Project object */;
 }

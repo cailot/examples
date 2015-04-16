@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  M7k373n9
+//  Segue Example
 //
-//  Created by Jin Seo on 2015. 4. 11..
+//  Created by Jin Seo on 2015. 4. 16..
 //  Copyright (c) 2015년 Jin Seo. All rights reserved.
 //
 
@@ -39,8 +39,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 //    func applicationWillTerminate(application: UIApplication) {
-//        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 //    }
+
     // MARK: - Core Data stack
     
     lazy var applicationDocumentsDirectory: NSURL = {
@@ -51,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     lazy var managedObjectModel: NSManagedObjectModel = {
         // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
-        let modelURL = NSBundle.mainBundle().URLForResource("M7k373n9", withExtension: "momd")!
+        let modelURL = NSBundle.mainBundle().URLForResource("SegueModel", withExtension: "momd")!
         return NSManagedObjectModel(contentsOfURL: modelURL)!
         }()
     
@@ -59,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it. This property is optional since there are legitimate error conditions that could cause the creation of the store to fail.
         // Create the coordinator and store
         var coordinator: NSPersistentStoreCoordinator? = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
-        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("M7k373n9.sqlite")
+        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("SegueModel.sqlite")
         var error: NSError? = nil
         var failureReason = "There was an error creating or loading the application's saved data."
         if coordinator!.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil, error: &error) == nil {
@@ -109,7 +110,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
-
-
 }
 
