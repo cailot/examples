@@ -9,31 +9,21 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController {
 
-    @IBOutlet
-    var tableView: UITableView!
     var items: [String] = ["List", "Add", "Edit", "Remove", "Master"]
     
+    @IBAction func pressMasterInput(sender: AnyObject)
+    {
+        let alertController = UIAlertController(title: "Jin", message: "seo", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
+        presentViewController(alertController, animated: true, completion: nil)
+        
+        
+    }
     // DB connection
     var context: NSManagedObjectContext? = nil
     
-    // return total num of items
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count
-    }
-    
-    // create cell
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
-        cell.textLabel?.text = items[indexPath.row]
-        return cell
-    }
-    
-    // handle cell selection
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("You selected cell#\(indexPath.row)")
-    }
     
     
 
@@ -42,15 +32,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         dbInitialise()
         
-        
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell");
-        
-        
-        
-        var v:UIView = UIView(frame: CGRectZero)
-        v.backgroundColor = UIColor.clearColor()
-        tableView.tableFooterView = v
-        tableView.tableHeaderView = v
         
         // Do any additional setup after loading the view, typically from a nib.
     }
