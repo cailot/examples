@@ -11,11 +11,9 @@ import CoreData
 
 class ViewController: UIViewController {
 
-    var items: [String] = ["List", "Add", "Edit", "Remove", "Master"]
-    
     @IBAction func pressMasterInput(sender: AnyObject)
     {
-        let alertController = UIAlertController(title: "Jin", message: "seo", preferredStyle: UIAlertControllerStyle.Alert)
+        let alertController = UIAlertController(title: "Jin", message: "Hi Jihoo, How are you, today?", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
         presentViewController(alertController, animated: true, completion: nil)
         

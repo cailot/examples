@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -133,7 +133,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="1" green="0.95036229270246375" blue="0.65106619574977154" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="centerY" secondItem="hOW-2S-dGD" secondAttribute="centerY" id="02V-bR-gYF"/>
                         <constraint firstItem="ymn-SD-UPT" firstAttribute="height" secondItem="hOW-2S-dGD" secondAttribute="height" id="0Zd-RA-khJ"/>
@@ -285,7 +285,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="1" green="0.75031155166858388" blue="0.96883250648938879" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="4h4-H6-b1m" firstAttribute="leading" secondItem="AhS-mj-Pf8" secondAttribute="trailing" constant="2" id="0Pl-oG-3PS"/>
                         <constraint firstAttribute="centerY" secondItem="YhS-PB-BJm" secondAttribute="centerY" id="2au-to-aSq"/>
@@ -412,7 +412,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.71595742172168353" green="1" blue="0.95752696554544436" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="35S-on-X2Y" firstAttribute="width" secondItem="GvN-fi-42J" secondAttribute="width" id="1ZR-4a-7zu"/>
                         <constraint firstItem="Vwh-Ng-zl5" firstAttribute="leading" secondItem="GvN-fi-42J" secondAttribute="trailing" constant="2" id="418-C2-ez5"/>
@@ -516,7 +516,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.69848996030773525" green="0.73596033672166739" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="VLG-p4-HJK" secondAttribute="trailing" constant="6" id="D8P-Wb-YlN"/>
                         <constraint firstAttribute="centerY" secondItem="tI9-mw-uZL" secondAttribute="centerY" id="Fcl-TP-NBg"/>
