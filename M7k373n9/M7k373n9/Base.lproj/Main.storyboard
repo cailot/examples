@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzl-vw-Exo" userLabel="ListView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzl-vw-Exo" userLabel="ListView">
                                 <rect key="frame" x="10" y="10" width="580" height="90"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1h-CE-hyx">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1h-CE-hyx">
                                         <rect key="frame" x="275" y="30" width="30" height="30"/>
                                         <state key="normal" title="List">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,10 +32,10 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.97409737615459802" blue="0.13794635370192665" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPG-CD-nnK" userLabel="AddView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPG-CD-nnK" userLabel="AddView">
                                 <rect key="frame" x="10" y="110" width="580" height="135"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWc-Up-eHB">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWc-Up-eHB">
                                         <rect key="frame" x="275" y="53" width="30" height="30"/>
                                         <state key="normal" title="Add">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,10 +47,10 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.27821747607077207" blue="0.83317882308870184" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Mr-X9-njM" userLabel="EditView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Mr-X9-njM" userLabel="EditView">
                                 <rect key="frame" x="10" y="255" width="580" height="90"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxL-en-Thf">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxL-en-Thf">
                                         <rect key="frame" x="275" y="30" width="30" height="30"/>
                                         <state key="normal" title="Edit">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,10 +59,10 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.23318893278190878" green="0.88329103554010957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00w-nq-brQ" userLabel="RemoveView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00w-nq-brQ" userLabel="RemoveView">
                                 <rect key="frame" x="10" y="355" width="580" height="91"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-hh-vee">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-hh-vee">
                                         <rect key="frame" x="262" y="30" width="57" height="30"/>
                                         <state key="normal" title="Remove">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,10 +71,10 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.71124768515172931" green="0.25641294604137743" blue="0.9245657698072568" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kKA-hs-Og3" userLabel="MasterView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kKA-hs-Og3" userLabel="MasterView">
                                 <rect key="frame" x="10" y="456" width="580" height="90"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVt-2s-U5i">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVt-2s-U5i">
                                         <rect key="frame" x="266" y="30" width="48" height="30"/>
                                         <state key="normal" title="Master">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -150,7 +150,7 @@
         <!--View Controller-->
         <scene sceneID="Zp7-VC-cUx">
             <objects>
-                <viewController storyboardIdentifier="list" id="b0v-OM-KD1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="list" id="b0v-OM-KD1" customClass="ViewController" customModule="M7k373n9" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vQS-W3-Dt1"/>
                         <viewControllerLayoutGuide type="bottom" id="V7S-rO-c3z"/>
@@ -174,19 +174,60 @@
                                     <segue destination="vXZ-lx-hvc" kind="show" id="YJ5-RZ-E0A"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="l5q-VR-711" userLabel="dictionaryList">
+                                <rect key="frame" x="25" y="81" width="550" height="519"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Mlh-nb-P05">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mlh-nb-P05" id="J1p-xv-L82">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="b0v-OM-KD1" id="pkN-RU-PBO"/>
+                                    <outlet property="delegate" destination="b0v-OM-KD1" id="Yqu-er-RRp"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="l5q-VR-711" firstAttribute="top" secondItem="ut2-Ch-RF7" secondAttribute="bottom" constant="36" id="4La-hh-aKP"/>
                             <constraint firstAttribute="centerX" secondItem="j5c-Q5-buZ" secondAttribute="centerX" id="7L9-mF-hAk"/>
+                            <constraint firstItem="l5q-VR-711" firstAttribute="bottom" secondItem="V7S-rO-c3z" secondAttribute="top" id="BxC-Pd-BSM"/>
+                            <constraint firstItem="l5q-VR-711" firstAttribute="leading" secondItem="KBL-gm-Fcb" secondAttribute="leading" constant="25" id="GJn-wu-3gM"/>
+                            <constraint firstAttribute="trailing" secondItem="l5q-VR-711" secondAttribute="trailing" constant="25" id="IVn-cb-bug"/>
+                            <constraint firstItem="l5q-VR-711" firstAttribute="top" secondItem="j5c-Q5-buZ" secondAttribute="bottom" constant="50" id="NjO-JX-CUy"/>
+                            <constraint firstAttribute="centerY" secondItem="l5q-VR-711" secondAttribute="centerY" id="SPy-0T-qBr"/>
                             <constraint firstItem="j5c-Q5-buZ" firstAttribute="top" secondItem="KBL-gm-Fcb" secondAttribute="topMargin" constant="10" id="Wov-bc-BII"/>
+                            <constraint firstAttribute="bottom" secondItem="l5q-VR-711" secondAttribute="bottom" constant="20" id="htf-NN-VLA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l5q-VR-711" secondAttribute="trailing" constant="84" id="itl-ex-eeM"/>
                             <constraint firstItem="ut2-Ch-RF7" firstAttribute="leading" secondItem="KBL-gm-Fcb" secondAttribute="leadingMargin" constant="20" id="mPQ-Ym-CV9"/>
+                            <constraint firstItem="l5q-VR-711" firstAttribute="top" secondItem="j5c-Q5-buZ" secondAttribute="bottom" constant="50" id="oYt-lS-VbQ"/>
+                            <constraint firstAttribute="centerX" secondItem="l5q-VR-711" secondAttribute="centerX" id="tSB-kj-XuB"/>
                             <constraint firstItem="ut2-Ch-RF7" firstAttribute="top" secondItem="KBL-gm-Fcb" secondAttribute="topMargin" constant="15" id="xAL-K3-A6p"/>
+                            <constraint firstItem="l5q-VR-711" firstAttribute="bottom" secondItem="V7S-rO-c3z" secondAttribute="top" id="zhc-1Y-qcH"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IVn-cb-bug"/>
+                                <exclude reference="SPy-0T-qBr"/>
+                                <exclude reference="htf-NN-VLA"/>
+                                <exclude reference="itl-ex-eeM"/>
+                                <exclude reference="oYt-lS-VbQ"/>
+                                <exclude reference="zhc-1Y-qcH"/>
+                                <exclude reference="Wov-bc-BII"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="keywords" destination="l5q-VR-711" id="vd7-7g-D5T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iiB-97-6kJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="687" y="-106"/>
+            <point key="canvasLocation" x="556" y="107"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2i5-hP-dpN">

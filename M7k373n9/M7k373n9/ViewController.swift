@@ -9,8 +9,54 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController, UITextFieldDelegate {
 
+class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
+
+    @IBOutlet var keywords: UITableView!
+    
+    var cellContent: [String] = []
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return cellContent.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        var cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+        cell.textLabel?.text = cellContent[indexPath.row] as String
+        return cell
+    }
+    
+    func tableview(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        println("You selected cell #\(indexPath.row)!")
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*
+        Return context for access to DB
+    */
+    func returnContext() -> NSManagedObjectContext
+    {
+        var appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        var context: NSManagedObjectContext = appDel.managedObjectContext!
+        return context
+    }
+    
+    
+    
+   
+
+    
     
     /*
         Checks whether Master PIN is right or not.
@@ -62,8 +108,27 @@ class ViewController: UIViewController, UITextFieldDelegate {
         addInputValue.delegate = self
         addConfirmValue.delegate = self
         var value = addKey.text
-        println("User inputs...  \(value)")
+        if(addInputValue.text==addConfirmValue.text)
+        {
+            addKeyword(addKey.text, value: addInputValue.text)
+           println("Key ...  \(value) and Value .... \(addInputValue.text)")
+        }else{
+          println("ConfirmValue is not identical")
+        }
+        
     }
+    
+    // add info into DB
+    func addKeyword(key: String, value: String)
+    {
+        var context: NSManagedObjectContext = returnContext()
+        var entry = NSEntityDescription.insertNewObjectForEntityForName("Keywords", inManagedObjectContext: context) as! NSManagedObject
+        entry.setValue(key, forKey: "key")
+        entry.setValue(value, forKey: "value")
+        context.save(nil)
+        println(key + "--->" + value)
+    }
+    
 
     // cancel adding so clear textfields
     @IBAction func addCancel(sender: AnyObject)
@@ -71,6 +136,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         addKey.text = ""
         addInputValue.text = ""
         addConfirmValue.text = ""
+      
     }
     
     // disappear keyboard when clicks outside of textfield
@@ -85,47 +151,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.view.endEditing(true)
     }
-    
-    
-    /*
-    
-    
-    func registerForKeyboardNotifications()
-    {
-        //Adding notifies on keyboard appearing
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWasShown:", name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillBeHidden:", name: UIKeyboardWillHideNotification, object: nil)
-    }
-    
-    
-    func deregisterFromKeyboardNotifications()
-    {
-        //Removing notifies on keyboard appearing
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
-    }
-    
-    func keyboardWasShown(notification: NSNotification)
-    {
-        //Need to calculate keyboard exact size due to Apple suggestions
-        self.scrollView.scrollEnabled = true
-        var info : NSDictionary = notification.userInfo!
-        var keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue().size
-        var contentInsets : UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize!.height, 0.0)
-        
-        self.scrollView.contentInset = contentInsets
-        self.scrollView.scrollIndicatorInsets = contentInsets
-        
-        var aRect : CGRect = self.view.frame
-        aRect.size.height -= keyboardSize!.height
-        if let activeFieldPresent = activeField
-        {
-            if (!CGRectContainsPoint(aRect, activeField!.frame.origin))
-            {
-                self.scrollView.scrollRectToVisible(activeField!.frame, animated: true)
-            }
-        }
-    */
     
     
     
@@ -145,6 +170,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         dbInitialise()
+        tableInitialise()
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -154,6 +180,30 @@ class ViewController: UIViewController, UITextFieldDelegate {
     {
         var appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         context = appDel.managedObjectContext!
+    }
+    
+    func tableInitialise()
+    {
+//        self.keywords.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        
+        var context: NSManagedObjectContext = returnContext()
+        var request = NSFetchRequest(entityName: "Keywords")
+        request.returnsObjectsAsFaults = false
+        var results = context.executeFetchRequest(request, error: nil)
+        
+        if(results?.count>0)
+        {
+            for result:AnyObject in results!
+            {
+               let key = result.valueForKey("key") as! String
+               let value = result.valueForKey("value") as! String
+                var item = key + " : " + value
+                println(item)
+                cellContent.append(item)
+            }
+        }
+
         
     }
 
