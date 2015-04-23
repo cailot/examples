@@ -26,7 +26,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="b0v-OM-KD1" kind="show" id="Ul0-mP-JUQ"/>
+                                            <segue destination="b0v-OM-KD1" kind="show" identifier="list" id="Ul0-mP-JUQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -41,7 +41,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="qOo-xE-wXT" kind="show" id="wYg-Oi-5mB"/>
+                                            <segue destination="qOo-xE-wXT" kind="show" identifier="add" id="wYg-Oi-5mB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -171,7 +171,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="show" id="YJ5-RZ-E0A"/>
+                                    <segue destination="vXZ-lx-hvc" kind="show" identifier="main1" id="YJ5-RZ-E0A"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="l5q-VR-711" userLabel="dictionaryList">
@@ -227,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iiB-97-6kJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="556" y="107"/>
+            <point key="canvasLocation" x="939" y="-289"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2i5-hP-dpN">
@@ -255,7 +255,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="show" id="CvL-Vv-Rqk"/>
+                                    <segue destination="vXZ-lx-hvc" kind="show" identifier="main2" id="CvL-Vv-Rqk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeY-RA-aKX">
@@ -445,10 +445,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kth-dz-e9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="696" y="604"/>
+            <point key="canvasLocation" x="908" y="470"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YJ5-RZ-E0A"/>
+        <segue reference="CvL-Vv-Rqk"/>
     </inferredMetricsTieBreakers>
 </document>

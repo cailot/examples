@@ -9,9 +9,14 @@
 import UIKit
 import CoreData
 
+var showList = false
 
 class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
+    
+    // unwind segue ???
+    
+    
     @IBOutlet var keywords: UITableView!
     
     var cellContent: [String] = []
@@ -34,7 +39,32 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
     }
     
     
+    // called when a row deletion action is confirmed
     
+    func tableView(tableView: UITableView,
+        commitEditingStyle editingStyle: UITableViewCellEditingStyle,
+        forRowAtIndexPath indexPath: NSIndexPath) {
+            switch editingStyle {
+            case .Delete:
+                
+                
+                var cell = cellContent[indexPath.row]
+                var cellArr = split(cell) {$0 == ":"}
+                var key: String! = cellArr.count>1 ? cellArr[0].stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()) : nil
+                var value: String = cellArr[1]
+                // delete DB
+//                println("\(indexPath.row) --- \(cell) -----\(key)--")
+                deleteKeyword(key)
+
+                // remove the deleted item from the model
+                self.cellContent.removeAtIndex(indexPath.row)
+                // remove the deleted item from the `UITableView`
+                self.keywords.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+                
+            default:
+                return
+            }
+    }
     
     
     
@@ -182,28 +212,76 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         context = appDel.managedObjectContext!
     }
     
+    
     func tableInitialise()
     {
-//        self.keywords.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        
-        
+        println("tableInitialised()")
+        reloadList()
+    }
+    
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == "list"
+        {
+            showList = true
+            println("prepareForSegue - list")
+        }else{
+            showList = false
+        }
+    }
+    
+    
+    
+    
+    
+    func reloadList()
+    {
+        if(showList)
+        {
+            var context: NSManagedObjectContext = returnContext()
+            var request = NSFetchRequest(entityName: "Keywords")
+            request.returnsObjectsAsFaults = false
+            var results = context.executeFetchRequest(request, error: nil)
+            if(results?.count>0)
+            {
+                for result:AnyObject in results!
+                {
+                    let key = result.valueForKey("key") as! String
+                    let value = result.valueForKey("value") as! String
+                    var item = key + " : " + value
+                    cellContent.append(item)
+                }
+            }
+        }
+        println("display \(showList)")
+    }
+    
+    func deleteKeyword(delete: String)
+    {
         var context: NSManagedObjectContext = returnContext()
         var request = NSFetchRequest(entityName: "Keywords")
         request.returnsObjectsAsFaults = false
         var results = context.executeFetchRequest(request, error: nil)
-        
         if(results?.count>0)
         {
             for result:AnyObject in results!
             {
-               let key = result.valueForKey("key") as! String
-               let value = result.valueForKey("value") as! String
-                var item = key + " : " + value
-                println(item)
-                cellContent.append(item)
+                let key = result.valueForKey("key") as! String
+                if key == delete
+                {
+                    context.deleteObject(result as! NSManagedObject)
+                    println(key + " has been deleted")
+                }
+                
+                
+//                let value = result.valueForKey("value") as! String
+//                var item = key + " : " + value
+//                cellContent.append(item)
             }
         }
-
+        println("display \(showList)")
         
     }
 
