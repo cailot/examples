@@ -17,6 +17,13 @@
 		69BEE38B1AD8F35600EBA81A /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BEE38A1AD8F35600EBA81A /* KeyboardViewController.swift */; };
 		69BEE38E1AD8F35600EBA81A /* m7k373n9Board.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 69BEE3861AD8F35600EBA81A /* m7k373n9Board.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		69BEE3961AD8F40E00EBA81A /* KeyboardView5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69BEE3951AD8F40E00EBA81A /* KeyboardView5.xib */; };
+		69E4EE3D1AEFBB030049777E /* M7k37Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4EE3C1AEFBB030049777E /* M7k37Util.swift */; };
+		69E4EE3F1AF24D430049777E /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4EE3E1AF24D430049777E /* ResponsiveTextFieldViewController.swift */; };
+		69F6C21E1AE9FFB900FA596A /* AddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6C21D1AE9FFB900FA596A /* AddTableViewController.swift */; };
+		69F6C2201AEA04DE00FA596A /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6C21F1AEA04DE00FA596A /* ListTableViewController.swift */; };
+		69F6C2241AEA0BB900FA596A /* RemoveTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6C2231AEA0BB900FA596A /* RemoveTableViewController.swift */; };
+		69F6C2631AEA95A500FA596A /* EditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6C2621AEA95A500FA596A /* EditTableViewController.swift */; };
+		69F6C2651AEA964200FA596A /* KeywordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6C2641AEA964200FA596A /* KeywordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +73,13 @@
 		69BEE3891AD8F35600EBA81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69BEE38A1AD8F35600EBA81A /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		69BEE3951AD8F40E00EBA81A /* KeyboardView5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView5.xib; sourceTree = "<group>"; };
+		69E4EE3C1AEFBB030049777E /* M7k37Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M7k37Util.swift; sourceTree = "<group>"; };
+		69E4EE3E1AF24D430049777E /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
+		69F6C21D1AE9FFB900FA596A /* AddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTableViewController.swift; sourceTree = "<group>"; };
+		69F6C21F1AEA04DE00FA596A /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		69F6C2231AEA0BB900FA596A /* RemoveTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveTableViewController.swift; sourceTree = "<group>"; };
+		69F6C2621AEA95A500FA596A /* EditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTableViewController.swift; sourceTree = "<group>"; };
+		69F6C2641AEA964200FA596A /* KeywordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeywordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +130,19 @@
 		69BEE35F1AD8F32D00EBA81A /* M7k373n9 */ = {
 			isa = PBXGroup;
 			children = (
+				69E4EE3E1AF24D430049777E /* ResponsiveTextFieldViewController.swift */,
 				69BEE3621AD8F32D00EBA81A /* AppDelegate.swift */,
 				69BEE3641AD8F32D00EBA81A /* ViewController.swift */,
+				69F6C21D1AE9FFB900FA596A /* AddTableViewController.swift */,
+				69F6C21F1AEA04DE00FA596A /* ListTableViewController.swift */,
+				69F6C2231AEA0BB900FA596A /* RemoveTableViewController.swift */,
+				69F6C2641AEA964200FA596A /* KeywordViewController.swift */,
 				691590FF1ADFF856003D1EC4 /* M7k373n9.xcdatamodeld */,
 				69BEE3661AD8F32D00EBA81A /* Main.storyboard */,
 				69BEE3691AD8F32D00EBA81A /* Images.xcassets */,
 				69BEE36B1AD8F32D00EBA81A /* LaunchScreen.xib */,
+				69F6C2621AEA95A500FA596A /* EditTableViewController.swift */,
+				69E4EE3C1AEFBB030049777E /* M7k37Util.swift */,
 				69BEE3601AD8F32D00EBA81A /* Supporting Files */,
 			);
 			path = M7k373n9;
@@ -302,7 +323,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				69BEE3651AD8F32D00EBA81A /* ViewController.swift in Sources */,
+				69F6C2631AEA95A500FA596A /* EditTableViewController.swift in Sources */,
+				69F6C2651AEA964200FA596A /* KeywordViewController.swift in Sources */,
+				69F6C2241AEA0BB900FA596A /* RemoveTableViewController.swift in Sources */,
+				69F6C21E1AE9FFB900FA596A /* AddTableViewController.swift in Sources */,
 				69BEE3631AD8F32D00EBA81A /* AppDelegate.swift in Sources */,
+				69E4EE3F1AF24D430049777E /* ResponsiveTextFieldViewController.swift in Sources */,
+				69F6C2201AEA04DE00FA596A /* ListTableViewController.swift in Sources */,
+				69E4EE3D1AEFBB030049777E /* M7k37Util.swift in Sources */,
 				691591011ADFF856003D1EC4 /* M7k373n9.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

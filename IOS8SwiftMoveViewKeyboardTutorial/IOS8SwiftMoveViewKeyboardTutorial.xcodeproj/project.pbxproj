@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69E4EE511AF256680049777E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4EE501AF256680049777E /* AppDelegate.swift */; };
+		69E4EE541AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69E4EE521AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial.xcdatamodeld */; };
+		69E4EE561AF256680049777E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4EE551AF256680049777E /* ViewController.swift */; };
+		69E4EE591AF256680049777E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E4EE571AF256680049777E /* Main.storyboard */; };
+		69E4EE5B1AF256680049777E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E4EE5A1AF256680049777E /* Images.xcassets */; };
+		69E4EE5E1AF256680049777E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E4EE5C1AF256680049777E /* LaunchScreen.xib */; };
+		69E4EE6A1AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4EE691AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorialTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69E4EE641AF256680049777E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69E4EE431AF256680049777E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69E4EE4A1AF256680049777E;
+			remoteInfo = IOS8SwiftMoveViewKeyboardTutorial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		69E4EE4B1AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS8SwiftMoveViewKeyboardTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E4EE4F1AF256680049777E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E4EE501AF256680049777E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69E4EE531AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IOS8SwiftMoveViewKeyboardTutorial.xcdatamodel; sourceTree = "<group>"; };
+		69E4EE551AF256680049777E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69E4EE581AF256680049777E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69E4EE5A1AF256680049777E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		69E4EE5D1AF256680049777E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		69E4EE631AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS8SwiftMoveViewKeyboardTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E4EE681AF256680049777E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E4EE691AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS8SwiftMoveViewKeyboardTutorialTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69E4EE481AF256680049777E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E4EE601AF256680049777E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69E4EE421AF256680049777E = {
+			isa = PBXGroup;
+			children = (
+				69E4EE4D1AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial */,
+				69E4EE661AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorialTests */,
+				69E4EE4C1AF256680049777E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69E4EE4C1AF256680049777E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69E4EE4B1AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial.app */,
+				69E4EE631AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69E4EE4D1AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				69E4EE501AF256680049777E /* AppDelegate.swift */,
+				69E4EE551AF256680049777E /* ViewController.swift */,
+				69E4EE571AF256680049777E /* Main.storyboard */,
+				69E4EE5A1AF256680049777E /* Images.xcassets */,
+				69E4EE5C1AF256680049777E /* LaunchScreen.xib */,
+				69E4EE521AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial.xcdatamodeld */,
+				69E4EE4E1AF256680049777E /* Supporting Files */,
+			);
+			path = IOS8SwiftMoveViewKeyboardTutorial;
+			sourceTree = "<group>";
+		};
+		69E4EE4E1AF256680049777E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69E4EE4F1AF256680049777E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69E4EE661AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				69E4EE691AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorialTests.swift */,
+				69E4EE671AF256680049777E /* Supporting Files */,
+			);
+			path = IOS8SwiftMoveViewKeyboardTutorialTests;
+			sourceTree = "<group>";
+		};
+		69E4EE671AF256680049777E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69E4EE681AF256680049777E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69E4EE4A1AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69E4EE6D1AF256680049777E /* Build configuration list for PBXNativeTarget "IOS8SwiftMoveViewKeyboardTutorial" */;
+			buildPhases = (
+				69E4EE471AF256680049777E /* Sources */,
+				69E4EE481AF256680049777E /* Frameworks */,
+				69E4EE491AF256680049777E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOS8SwiftMoveViewKeyboardTutorial;
+			productName = IOS8SwiftMoveViewKeyboardTutorial;
+			productReference = 69E4EE4B1AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69E4EE621AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69E4EE701AF256680049777E /* Build configuration list for PBXNativeTarget "IOS8SwiftMoveViewKeyboardTutorialTests" */;
+			buildPhases = (
+				69E4EE5F1AF256680049777E /* Sources */,
+				69E4EE601AF256680049777E /* Frameworks */,
+				69E4EE611AF256680049777E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69E4EE651AF256680049777E /* PBXTargetDependency */,
+			);
+			name = IOS8SwiftMoveViewKeyboardTutorialTests;
+			productName = IOS8SwiftMoveViewKeyboardTutorialTests;
+			productReference = 69E4EE631AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69E4EE431AF256680049777E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Jin Seo";
+				TargetAttributes = {
+					69E4EE4A1AF256680049777E = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					69E4EE621AF256680049777E = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 69E4EE4A1AF256680049777E;
+					};
+				};
+			};
+			buildConfigurationList = 69E4EE461AF256680049777E /* Build configuration list for PBXProject "IOS8SwiftMoveViewKeyboardTutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69E4EE421AF256680049777E;
+			productRefGroup = 69E4EE4C1AF256680049777E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69E4EE4A1AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial */,
+				69E4EE621AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69E4EE491AF256680049777E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E4EE591AF256680049777E /* Main.storyboard in Resources */,
+				69E4EE5E1AF256680049777E /* LaunchScreen.xib in Resources */,
+				69E4EE5B1AF256680049777E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E4EE611AF256680049777E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69E4EE471AF256680049777E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E4EE561AF256680049777E /* ViewController.swift in Sources */,
+				69E4EE511AF256680049777E /* AppDelegate.swift in Sources */,
+				69E4EE541AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E4EE5F1AF256680049777E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E4EE6A1AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69E4EE651AF256680049777E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69E4EE4A1AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial */;
+			targetProxy = 69E4EE641AF256680049777E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69E4EE571AF256680049777E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69E4EE581AF256680049777E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69E4EE5C1AF256680049777E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69E4EE5D1AF256680049777E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69E4EE6B1AF256680049777E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69E4EE6C1AF256680049777E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69E4EE6E1AF256680049777E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IOS8SwiftMoveViewKeyboardTutorial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		69E4EE6F1AF256680049777E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IOS8SwiftMoveViewKeyboardTutorial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		69E4EE711AF256680049777E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IOS8SwiftMoveViewKeyboardTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOS8SwiftMoveViewKeyboardTutorial.app/IOS8SwiftMoveViewKeyboardTutorial";
+			};
+			name = Debug;
+		};
+		69E4EE721AF256680049777E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IOS8SwiftMoveViewKeyboardTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOS8SwiftMoveViewKeyboardTutorial.app/IOS8SwiftMoveViewKeyboardTutorial";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69E4EE461AF256680049777E /* Build configuration list for PBXProject "IOS8SwiftMoveViewKeyboardTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E4EE6B1AF256680049777E /* Debug */,
+				69E4EE6C1AF256680049777E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69E4EE6D1AF256680049777E /* Build configuration list for PBXNativeTarget "IOS8SwiftMoveViewKeyboardTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E4EE6E1AF256680049777E /* Debug */,
+				69E4EE6F1AF256680049777E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		69E4EE701AF256680049777E /* Build configuration list for PBXNativeTarget "IOS8SwiftMoveViewKeyboardTutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E4EE711AF256680049777E /* Debug */,
+				69E4EE721AF256680049777E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		69E4EE521AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				69E4EE531AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial.xcdatamodel */,
+			);
+			currentVersion = 69E4EE531AF256680049777E /* IOS8SwiftMoveViewKeyboardTutorial.xcdatamodel */;
+			path = IOS8SwiftMoveViewKeyboardTutorial.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 69E4EE431AF256680049777E /* Project object */;
+}
